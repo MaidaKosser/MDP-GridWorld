@@ -3,6 +3,7 @@
 Interactive visualization of Value Iteration and Policy Iteration using Streamlit.
 
 ## Features
+
 - Animated GridWorld
 - Heatmap values
 - Policy arrows
@@ -11,7 +12,7 @@ Interactive visualization of Value Iteration and Policy Iteration using Streamli
 - Discount factor control
 - Timeline slider
 
-## Run
+## Run commands
 
 pip install -r requirements.txt
 streamlit run app.py

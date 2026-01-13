@@ -44,6 +44,9 @@
 
 ---
 
+## Dashboard Interface
+![Dashboard](https://github.com/MaidaKosser/MDP-GridWorld/blob/main/dashboard.png)
+
 ## Project Structure
 ```bash
 MDP-GridWorld/

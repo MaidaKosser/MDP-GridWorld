@@ -133,4 +133,5 @@ def plot_value_and_policy(mdp, V, pi, figsize=(4.4, 4.4), dpi=150):
     cbar.set_label("State Value", fontsize=9)
     
     fig.tight_layout(pad=0.2)
+    plt.close(fig)    
     return fig

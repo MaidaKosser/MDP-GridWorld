@@ -103,7 +103,12 @@ if st.session_state.history:
 ph = center.empty()
 if st.session_state.run:
     while st.session_state.run and st.session_state.i < len(st.session_state.history):
-        V,pi = st.session_state.history[st.session_state.i]
+        if st.session_state.history and 0 <= st.session_state.i < len(st.session_state.history):
+            V, pi = st.session_state.history[st.session_state.i]
+        else:
+            st.session_state.i = 0
+            V, pi = st.session_state.history[0]
+
         with ph.container():
             st.markdown(f"### Iteration {st.session_state.i+1}/{len(st.session_state.history)}")
             st.pyplot(plot_value_and_policy(mdp,V,pi,figsize=(3,3),dpi=200),clear_figure=True)
@@ -112,7 +117,12 @@ if st.session_state.run:
     st.session_state.run=False
 
 if st.session_state.history:
-    V,pi = st.session_state.history[st.session_state.i]
+    if st.session_state.history and 0 <= st.session_state.i < len(st.session_state.history):
+        V, pi = st.session_state.history[st.session_state.i]
+    else:
+        st.session_state.i = 0
+        V, pi = st.session_state.history[0]
+
     with ph.container():
         st.markdown(f"### Iteration {st.session_state.i+1}/{len(st.session_state.history)}")
         st.pyplot(plot_value_and_policy(mdp,V,pi,figsize=(3,3),dpi=200),clear_figure=True)

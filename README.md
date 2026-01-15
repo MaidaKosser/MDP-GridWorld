@@ -7,10 +7,12 @@
 [![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)](https://numpy.org)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=for-the-badge&logo=matplotlib&logoColor=white)](https://matplotlib.org)
 
-## Live Demo (Deployed)
-🔗 **[Streamlit App](https://mdp-visualizer.streamlit.app/)**
+## 🔗 Live Deployment (Web App):  **[Live Streamlit App](https://mdp-visualizer.streamlit.app/)**
 
----
+
+## 🎥 Project Demo Video: **[Demo Video](https://drive.google.com/file/d/10tx1jn1Qb8IbqEtD_5PBZlCAqM1IT2rR/view?usp=sharing)**
+
+
 
 ###  GridWorld MDP Environment
 -  5x5 Grid Layout
